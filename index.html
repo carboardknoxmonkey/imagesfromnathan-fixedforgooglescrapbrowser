@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<head>
+    <title>Home</title>
+    <link rel="stylesheet" href="homestyle.css">
+</head>
+<body>
+    <div class="title">
+        <a href="index.html"><img src="img/title.png" height="82px"><br></a>
+        <a href="california-coast.html">California Coast...   </a><a href="orick.html">Orick...   </a><a href="oregon.html">Oregon...   </a><a href="cds.html">My CD Collection...   </a>
+    </div>
+<br><br><br><br><br><br>
+<div class="images">
+    <div class="slideshow-container">
+        <div class="mySlides fade">
+          <img src="img/worker-nath.jpg" style="width:50%">
+        </div>
+        <div class="mySlides fade">
+          <img src="img/basketball-nath.jpg" style="width:50%">
+        </div>
+        <div class="mySlides fade">
+          <img src="img/normal-nath.jpg" style="width:50%">
+        </div>
+      </div>
+      <br>
+      <p>
+        Hello, I am Nathan Knox. This is a site I made for a school project. Please browse as you wish.<br><br>
+        This site contains images I took on a road trip with my family back in June. As well as two images of my CD Collection.<br><br>
+        This site was made in HTML and CSS by hand. It is being hosted on GitHub via the GitHub Pages feature.<br>
+        There are also some secrets hidden around this site. Can you find them all? Here's a hint: <strong>No</strong> because I am lying to you about the secrets. There's only one secret.<br><br>
+      </p>
+    </div>
+</div>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<div class="expand"></div>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<p>This is not a secret anyone can find this.</p>
+
+
+</body>
+
+<script>
+     let slideIndex = 0;
+    showSlides();
+
+    function showSlides() {
+    let i;
+    let slides = document.getElementsByClassName("mySlides");
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}
+    slides[slideIndex-1].style.display = "block";
+    setTimeout(showSlides, 10000); // Change image every 2 seconds
+    } 
+</script>

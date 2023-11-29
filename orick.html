@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<head>
+    <title>Orick</title>
+    <link rel="stylesheet" href="homestyle.css">
+</head>
+<body>
+    <div class="title">
+        <a href="index.html"><img src="img/title.png" height="82px"><br></a>
+        <a href="california-coast.html">California Coast...   </a><a href="orick.html">Orick...   </a><a href="oregon.html">Oregon...   </a><a href="cds.html">My CD Collection...   </a>
+    </div>
+<br><br><br><br><br><br>
+    <div class="images">
+        <div class="slideshow-container">
+            <div class="mySlides fade">
+              <img src="img/Orick.jpg" style="width:100%">
+            </div>
+            <div class="mySlides fade">
+              <img src="img/seal.jpg" style="width:100%">
+            </div>
+            <div class="mySlides fade">
+              <img src="img/sunset.jpg" style="width:100%">
+            </div>
+          </div>
+        <p style="align-items: righ; text-align: left; width: 100%; margin-left: 50px;">
+            Orick was a lovely coastal town. We spent some time here walking about. Mostly it was waiting so that we can go into the restuarnt we wanted to eat at. (That place had some lovely chowder)<br><br>
+            Now while we were there we noticed a small herd of seals. Some of these images were taken by me and others by my brother.
+        </p>
+    </div>
+</body>
+<script>
+    let slideIndex = 0;
+    showSlides();
+
+    function showSlides() {
+    let i;
+    let slides = document.getElementsByClassName("mySlides");
+    for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}
+    slides[slideIndex-1].style.display = "block";
+    setTimeout(showSlides, 10000);
+    } 
+</script>

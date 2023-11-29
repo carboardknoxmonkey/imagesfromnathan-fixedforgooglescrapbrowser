@@ -1,0 +1,22 @@
+body {
+    background-color: chocolate;
+    align-items: center;
+    text-align: center;
+    font-family: cursive;
+    
+}
+
+.images {
+    display: flex;
+    align-items: center;
+    margin-left: 250px;
+    margin-right: 250px;
+}
+
+.title {
+    background-color: yellow;
+    margin: auto;
+    padding: 10px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 18px;
+}
